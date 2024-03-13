@@ -500,8 +500,8 @@ h3 {
 
 .modal {
   position: fixed;
-  width: 27vw;
-  height: 84vh;
+  width: 408px;
+  height: 584px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -528,4 +528,19 @@ h3 {
   top: 24px;
   right: 24px;
   border-color: #ffffff;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
 }
