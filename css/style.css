@@ -537,8 +537,22 @@ label {
 
 input {
   font-family: inherit;
+  border-radius: 4px;
 }
 
 textarea {
   resize: none;
+  border-radius: 4px;
+}
+
+.contact-form {
+  padding-top: 72px;
+}
+
+.checkmark {
+  display: none;
+}
+
+.checkbox-text {
+  display: flex;
 }

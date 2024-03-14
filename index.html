@@ -18,24 +18,31 @@
 <body class="main-page">
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
-            <form name="contact-form" autocomplete="on" novalidate>
+            <form class="contact-form" name="contact-form" autocomplete="on" novalidate>
                 <h4>Leave your contacts and we will call you back</h4>
                 <label>
                     Name
                     <input type="text" name="name" />
+                    <i></i>
                 </label>
                 <label>
                     Phone
                     <input type="tel" name="phone" />
+                    <i></i>
                 </label>
                 <label>
                     Email
                     <input type="email" name="email" />
+                    <i></i>
                 </label>
                 <label>
                     Comment
                     <textarea type="text" name="comment" rows="6" placeholder="Text input"></textarea>
                 </label>
+                <label>
+                    <input type="checkbox" class="checkmark" name="agreement" value="agree">
+                </label>
+                <span class="checkbox-text">I accept the terms and conditions of the Privacy Policy</span>
                 <button type="submit">Submit</button>
             </form>
             <button class="close-btn" data-modal-close>&#10006;</button>
