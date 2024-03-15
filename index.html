@@ -24,26 +24,42 @@
                 <label>
                     Name
                     <input type="text" name="name" />
-                    <i></i>
+                    <i class="input-icon">
+                        <svg width="18px" height="24px">
+                            <use href="./icons/form-symbol-defs.svg#icon-form-name"></use>
+                        </svg>
+                    </i>
                 </label>
                 <label>
                     Phone
                     <input type="tel" name="phone" />
-                    <i></i>
+                    <i class="input-icon">
+                        <svg width="18px" height="24px">
+                            <use href="./icons/form-symbol-defs.svg#icon-form-phone"></use>
+                        </svg>
+                    </i>
                 </label>
                 <label>
                     Email
                     <input type="email" name="email" />
-                    <i></i>
+                    <i class="input-icon">
+                        <svg width="18px" height="24px">
+                            <use href="./icons/form-symbol-defs.svg#icon-form-email"></use>
+                        </svg>
+                    </i>
                 </label>
                 <label>
                     Comment
                     <textarea type="text" name="comment" rows="6" placeholder="Text input"></textarea>
                 </label>
-                <label>
+                <label class="agree-check">
                     <input type="checkbox" class="checkmark" name="agreement" value="agree">
+                    <svg class="icon" width="16px" height="16px">
+                        <use href="./icons/icons.svg#checkbox"></use>
+                    </svg>
+                    <span class="checkbox-text">I accept the terms and conditions of the Privacy
+                        Policy</span>
                 </label>
-                <span class="checkbox-text">I accept the terms and conditions of the Privacy Policy</span>
                 <button type="submit">Submit</button>
             </form>
             <button class="close-btn" data-modal-close>&#10006;</button>
@@ -360,6 +376,9 @@
                         </svg>
                     </a>
                 </div>
+
+            </div>
+            <div class="subscribe">
 
             </div>
         </div>
