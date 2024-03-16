@@ -21,36 +21,37 @@
         <div class="modal-content">
             <form class="contact-form" name="contact-form" autocomplete="on" novalidate>
                 <h4>Leave your contacts and we will call you back</h4>
-                <label>
+                <label class="form-label">
                     Name
-                    <input type="text" name="name" />
+                    <input class="form-input" type="text" name="name" />
                     <i class="input-icon">
                         <svg width="18px" height="24px">
                             <use href="./icons/form-symbol-defs.svg#icon-form-name"></use>
                         </svg>
                     </i>
                 </label>
-                <label>
+                <label class="form-label">
                     Phone
-                    <input type="tel" name="phone" />
+                    <input class="form-input" type="tel" name="phone" />
                     <i class="input-icon">
                         <svg width="18px" height="24px">
                             <use href="./icons/form-symbol-defs.svg#icon-form-phone"></use>
                         </svg>
                     </i>
                 </label>
-                <label>
+                <label class="form-label">
                     Email
-                    <input type="email" name="email" />
+                    <input class="form-input" type="email" name="email" />
                     <i class="input-icon">
                         <svg width="18px" height="24px">
                             <use href="./icons/form-symbol-defs.svg#icon-form-email"></use>
                         </svg>
                     </i>
                 </label>
-                <label>
+                <label class="form-label">
                     Comment
-                    <textarea type="text" name="comment" rows="6" placeholder="Text input"></textarea>
+                    <textarea class="form-input" type="text" name="comment" rows="6"
+                        placeholder="Text input"></textarea>
                 </label>
                 <label class="agree-check">
                     <input type="checkbox" class="checkmark" name="agreement" value="agree">
@@ -60,7 +61,7 @@
                     <span class="checkbox-text">I accept the terms and conditions of the Privacy
                         Policy</span>
                 </label>
-                <button type="submit">Submit</button>
+                <button class="submit-btn" type="submit">Submit</button>
             </form>
             <button class="close-btn" data-modal-close>&#10006;</button>
 
@@ -379,8 +380,16 @@
 
             </div>
             <div class="subscribe">
+                <p>Subscribe</p>
+                <label>
+                    <input class="subscribe-input" type="email" name="subscribe-email" placeholder="E-mail">
+                </label>
 
             </div>
+            <button class="footer-submit-btn" type="submit">Subscribe
+                <svg>
+                    <use href="./icons/icon-send.svg"></use>
+                </svg> </button>
         </div>
 
     </footer>

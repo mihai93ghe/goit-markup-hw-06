@@ -16,6 +16,7 @@
   --close-btn-bkg: #f4f4fd;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --active-border-color: #404bbf;
+  --submit-btn-color: #4d5ae5;
 }
 
 *,
@@ -513,7 +514,7 @@ h3 {
   margin: 0 auto;
   padding: 16px;
   background-color: #fff;
-  width: 408px;
+  width: 454px;
   height: 584px;
   position: relative;
 }
@@ -528,7 +529,7 @@ h3 {
   right: 24px;
 }
 
-label {
+.form-label {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -536,9 +537,10 @@ label {
   position: relative;
 }
 
-input {
+.form-input {
   font-family: inherit;
   border-radius: 4px;
+  padding-left: 30px;
 }
 
 textarea {
@@ -548,6 +550,24 @@ textarea {
 
 .contact-form {
   padding-top: 42px;
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 30px;
+  left: 8px;
+}
+
+.form-label .form-input:focus + .input-icon {
+  fill: #4d5ae5;
+  border-color: #4d5ae5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label .form-input:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 1px solid #4d5ae5;
 }
 
 .checkmark {
@@ -567,6 +587,7 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+  flex-direction: row;
 }
 
 .agree-check .checkmark {
@@ -597,4 +618,15 @@ textarea {
   outline: none;
   stroke: var(--white);
   stroke-width: 0.2;
+}
+
+.submit-btn {
+  background-color: var(--submit-btn-color);
+  color: #fff;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  margin-left: 120px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
