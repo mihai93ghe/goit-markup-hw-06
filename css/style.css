@@ -630,3 +630,43 @@ textarea {
   margin-left: 120px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+
+.footer-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--submit-btn-color);
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  gap: 16px;
+  color: #fff;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.subscribe-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-input {
+  border: 1px solid#ffffff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: #2e2f42;
+  color: #ffffff;
+}
+
+.subscribe-input::placeholder {
+  color: #ffffff;
+  padding: 8px 16px;
+}
